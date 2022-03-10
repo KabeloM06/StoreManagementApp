@@ -36,7 +36,9 @@
             this.btnEditItems = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblLogOut = new System.Windows.Forms.LinkLabel();
+            this.welcome1 = new StoreManagementApp.UserControls.Welcome();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,9 +58,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.welcome1);
             this.panel2.Location = new System.Drawing.Point(210, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(705, 520);
+            this.panel2.Size = new System.Drawing.Size(755, 520);
             this.panel2.TabIndex = 0;
             // 
             // btnPlaceOrder
@@ -136,12 +139,20 @@
             this.lblLogOut.Text = "Log Out";
             this.lblLogOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLogOut_LinkClicked);
             // 
+            // welcome1
+            // 
+            this.welcome1.BackColor = System.Drawing.Color.White;
+            this.welcome1.Location = new System.Drawing.Point(0, 0);
+            this.welcome1.Name = "welcome1";
+            this.welcome1.Size = new System.Drawing.Size(765, 520);
+            this.welcome1.TabIndex = 0;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1000, 550);
+            this.ClientSize = new System.Drawing.Size(977, 545);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -151,6 +162,7 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -165,5 +177,6 @@
         private System.Windows.Forms.Button btnPlaceOrder;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel lblLogOut;
+        private UserControls.Welcome welcome1;
     }
 }
