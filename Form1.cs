@@ -36,7 +36,13 @@ namespace StoreManagementApp
                 Dashboard ds = new Dashboard("Admin");
                 ds.Show();
                 this.Hide();
+                
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
