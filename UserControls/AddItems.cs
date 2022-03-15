@@ -12,9 +12,17 @@ namespace StoreManagementApp.UserControls
 {
     public partial class AddItems : UserControl
     {
+        // Connect to database
+        function fn = new function();
+        String query;
         public AddItems()
         {
             InitializeComponent();
+        }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

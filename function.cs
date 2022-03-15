@@ -16,7 +16,7 @@ namespace StoreManagementApp
         {
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString= "data source = KABELOLAPTOP\\SQLEXPRESS;" +
-                "database = StoreManagementApp; " +
+                "database = items; " +
                 "integrated security = True;";
 
             return conn;

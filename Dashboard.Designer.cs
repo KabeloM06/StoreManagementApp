@@ -37,6 +37,8 @@
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.welcome1 = new StoreManagementApp.UserControls.Welcome();
+            this.addItems1 = new StoreManagementApp.UserControls.AddItems();
+            this.addItems2 = new StoreManagementApp.UserControls.AddItems();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +119,7 @@
             this.btnAddItems.TabIndex = 1;
             this.btnAddItems.Text = "Add Items";
             this.btnAddItems.UseVisualStyleBackColor = false;
+            this.btnAddItems.Click += new System.EventHandler(this.btnAddItems_Click);
             // 
             // btnPlaceOrder
             // 
@@ -133,6 +136,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.addItems2);
+            this.panel2.Controls.Add(this.addItems1);
             this.panel2.Controls.Add(this.welcome1);
             this.panel2.Location = new System.Drawing.Point(210, 12);
             this.panel2.Name = "panel2";
@@ -146,6 +151,22 @@
             this.welcome1.Name = "welcome1";
             this.welcome1.Size = new System.Drawing.Size(765, 520);
             this.welcome1.TabIndex = 0;
+            // 
+            // addItems1
+            // 
+            this.addItems1.BackColor = System.Drawing.Color.White;
+            this.addItems1.Location = new System.Drawing.Point(0, 1);
+            this.addItems1.Name = "addItems1";
+            this.addItems1.Size = new System.Drawing.Size(755, 520);
+            this.addItems1.TabIndex = 1;
+            // 
+            // addItems2
+            // 
+            this.addItems2.BackColor = System.Drawing.Color.White;
+            this.addItems2.Location = new System.Drawing.Point(409, 228);
+            this.addItems2.Name = "addItems2";
+            this.addItems2.Size = new System.Drawing.Size(30, 10);
+            this.addItems2.TabIndex = 2;
             // 
             // Dashboard
             // 
@@ -177,5 +198,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel lblLogOut;
         private UserControls.Welcome welcome1;
+        private UserControls.AddItems addItems2;
+        private UserControls.AddItems addItems1;
     }
 }

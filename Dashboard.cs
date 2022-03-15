@@ -37,7 +37,7 @@ namespace StoreManagementApp
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            addItems1.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -50,6 +50,12 @@ namespace StoreManagementApp
             Login ds = new Login();
             ds.Show();
             this.Hide();
+        }
+
+        private void btnAddItems_Click(object sender, EventArgs e)
+        {
+            addItems1.Visible = true;
+            addItems1.BringToFront();
         }
     }
 }
